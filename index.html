@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Example</title>
+    <style>
+        body{
+          background-color: black;
+          padding: 0;
+          margin: 0;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+        }
+        canvas {
+          padding: 0;
+          margin: 0;
+        }
+        form{
+          position: absolute;
+          top: 0;
+          left:  0;
+        }
+        footer{
+          z-index: 10;
+          position: absolute;
+          text-align: center;
+          height: 30px;
+          width: 340px;
+          top: 50%;
+          margin-top: -15px;
+          margin-left: -155px;
+          left: 0;
+          transform: rotate(90deg);
+          font-size: 1.5em;
+        }
+        .github{
+          z-index: 10;
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          width: 270px;
+          height: 30px;
+          margin-top: -15px;
+          margin-right: -120px;
+          right: 0;
+          font-size: 1.5em;
+          transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="1250px" height="600px"></canvas>
+    <form onsubmit="actualizar(event)">
+        <select id="groups" name="groups">
+            <optgroup label="ramdon">
+              <option selected>ruido rojo</option>
+              <option>ruido rubi</option>
+              <option>white</option>
+              <option>rojo</option>
+            </optgroup>
+            <optgroup label="gradiante">
+              <option>gradiante izquierda</option>
+              <option>gradiante derecha</option>
+              <option>circulo</option>
+            </optgroup>
+            <optgroup label="pesados">
+              <option>rueda</option>
+              <option>tunel</option>
+              <option>tunel2</option>
+              <option>tunel3</option>
+            </optgroup>
+          </select>
+        <input type="submit" value="actulizar">
+    </form>
+    <div class="github"><a href="https://github.com/jsebastian2707">github -> jsebastian2707</a></div>
+    <footer>juan sebastian hernandez 2022</footer>
+    <script src="index.js"></script>
+</body>
+</html>
